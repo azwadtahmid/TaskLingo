@@ -22,7 +22,7 @@ function createTask() {
         </label>
             <div class="delete">
                 <i class="uil uil-trash"></i>
-            </div>
+        </div>
         </div>`;
         var current_tasks = document.querySelectorAll(".delete");
         for (var i=0;i<current_tasks.length;i++){
@@ -30,7 +30,7 @@ function createTask() {
                 this.parentNode.remove();}}
             taskSection.offsetHeight >= 300
             ? taskSection.classList.add("overflow")
-            : taskSection.remove("overflow");
+            : taskSection.classList.remove("overflow");
             }
         }
 
